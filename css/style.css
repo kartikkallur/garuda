@@ -357,16 +357,73 @@ footer {
 
 }
 
-/* For mobile devices */
-@media (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-  }
+/* ADD THIS CSS AT THE BOTTOM OF YOUR EXISTING CSS FILE */
+
+/* Fix outer body scrolling */
+body {
+    overflow-x: hidden;
 }
 
-/* For tablets */
-@media (min-width: 601px) and (max-width: 900px) {
-  .menu {
-    flex-direction: row;
-  }
+/* Fix for car image grid to be responsive */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin: 30px auto;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
+
+.grid-item img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Make the main span flex section stack vertically on mobile */
+main span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main span div {
+    flex: 1 1 120px;
+    max-width: 150px;
+    text-align: center;
+}
+
+main span img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Make images and layout adjust for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .grid-item p,
+    span p {
+        font-size: 14px;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+}
+
+
