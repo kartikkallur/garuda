@@ -1,0 +1,358 @@
+marquee {
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 10px;
+    display: flex;
+}
+
+main span {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+main span img {
+    width: 200px;
+    height: auto;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgba(255, 199, 16, 0.87);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+
+}
+
+a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(3, 3, 3);
+}
+
+p {
+    text-align: center;
+}
+
+
+main {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1.5s ease-out forwards;
+    
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin: 5px;
+    font-weight: 15px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+span {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+div {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+span div:hover {
+    transform: scale(1.1);
+}
+
+
+
+main img {
+    display: block;
+    margin: 10;
+    border: 7;
+    padding: 5px;
+
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    display: flex;
+    align-items: center;
+}
+
+span p {
+    font-size: 20px;
+
+}
+
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    /* 4 columns */
+    grid-gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Images inside Grid */
+ .grid-container img {
+    width: 65%;
+    height: auto;
+    max-width: 100px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect for Grid Items */
+.grid-item:hover {
+    transform: scale(0.95);
+    color: rgba(255, 199, 16, 0.87);
+}
+
+
+fieldset {
+    width: 35%;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Center the content */
+.contact-container {
+    text-align: center;
+    justify-content: space-between;
+
+
+
+}
+
+/* Common styling for buttons */
+.contact-button {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+section img {
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin: 25;
+    text-align: center;
+    content: 50%
+}
+
+section p {
+
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 06px;
+    margin: 06px;
+    content: 50%;
+
+}
+
+/* Phone button styling */
+.phone {
+    background-color: #000000;
+    /* Green for phone */
+    justify-content: center;
+
+    display: flex;
+    padding: 10px;
+    margin: 25;
+    text-align: center;
+}
+
+.phone:hover {
+    background-color: #faae09;
+}
+
+/* Email button styling */
+.email {
+    background-color: #000000;
+    /* Red for email */
+}
+
+.email:hover {
+    background-color: #faae09;
+}
+
+/* Icon styling */
+.contact-button i {
+    margin-right: 0px;
+}
+
+.logo.png {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h4 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    background: #000000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.box a:hover {
+    background: rgba(255, 199, 16, 0.87);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-style: arial;
+    color: #565a57;
+    font-size: 15px;
+
+}
