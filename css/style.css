@@ -356,3 +356,17 @@ footer {
     font-size: 15px;
 
 }
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .menu {
+    flex-direction: row;
+  }
+}
